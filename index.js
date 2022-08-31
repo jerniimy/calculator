@@ -1,7 +1,8 @@
 let expression = document.querySelector('#expression');
 expression.oninput = function(){
-    this.value = this.value.replace(/[A-Za-zА-Яа-яЁё?!,@#$%^&|]/g, '');
+    this.value = this.value.replace(/[A-Za-zА-Яа-яЁё?!@#$%^&|]/g, '');
     this.value = this.value.replace(/[=]/g, '+');
+    this.value = this.value.replace(/[,]/g, '.');
   }
 let resultOfExp;
 function focusInput() {
