@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>arithmometer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <p class="titul">arithmometer!!</p>
+  <div class="grid container">
+  <input type="text" id="expression" / autofocus placeholder="calculate smth">
+  <div class="operators buttons">
+      <input type="button" class="operator button white plus" value="+" onclick="inputExp('+')" />
+      <input type="button" class="operator button blue minus" value="-" onclick="inputExp('-')" />
+      <input type="button" class="operator button white multiply" value="*" onclick="inputExp('*')" />
+      <input type="button" class="operator button blue divide" value="/" onclick="inputExp('/')" />
+      <input type="button" class="operator button white dot" value="." onclick="inputExp('.')" />
+      <input type="button" class="operator button blue bracket-l" value="(" onclick="inputExp('(')" />
+      <input type="button" class="operator button white bracket-r" value=")" onclick="inputExp(')')" />
+      <input type="button" class="operator button blue arrow" value="Del" onclick="clearAll()" />
+  	</div>
+    <div class="numbers buttons">
+		<input type="button" class="number button blue one" value="1" onclick="inputExp('1')" />
+    <input type="button" class="number button white two" value="2" onclick="inputExp('2')" />
+    <input type="button" class="number button blue three" value="3" onclick="inputExp('3')" />
+    <input type="button" class="number button white four" value="4" onclick="inputExp('4')" />
+		<input type="button" class="number button blue five" value="5" onclick="inputExp('5')" />
+		<input type="button" class="number button white six" value="6" onclick="inputExp('6')" />
+		<input type="button" class="number button blue seven" value="7" onclick="inputExp('7')" />
+		<input type="button" class="number button white ate" value="8" onclick="inputExp('8')" />
+	</div>
+    <div class="last buttons">
+    <input type="button" class="number button white greeting" value="greeting" onclick=" greeting()" />
+		<input type="button" class="number button blue nine" value="9" onclick="inputExp('9')" />
+		<input type="button" class="number button white zero" value="0" onclick="inputExp('0')" />
+    <input type="button" class="number button blue calculate" value="calculate" onclick=" giveResult()" />
+    </div>
+  </div>
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>

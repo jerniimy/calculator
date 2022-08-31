@@ -1,0 +1,121 @@
+body {
+  margin: 0;
+  padding: 0;
+  color: black;
+  background: linear-gradient( #DEEEFF, transparent 1px), linear-gradient( 90deg, #DEEEFF, transparent 1px);
+  background-size: 40px 40px;
+  background-position: center center;
+  font-family: "Kharkiv Tone";
+  overflow-x: hidden;
+}
+.titul {
+  display: flex;
+  width: 100%;
+  height: 120px;
+  background: #fff;
+  align-items: center;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 300px;
+  font-size: 30px;
+  color: #4C13EE;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 49%;
+  height: min-content;
+  min-width: 300px;
+  min-height: 300px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  border: 3px solid #4C13EE;
+  border-top: 40px solid #4C13EE;
+}
+#expression {
+  background: #4C13EE;
+  width: 90%;
+  height: 20%;
+  min-height: 80px;
+  border: 0;
+  outline: 0;
+  font-size: 20px;
+  display: block;
+  left: 0;
+  right: 0;
+  margin: auto;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  text-indent: 10px;
+  font-family: "Kharkiv Tone";
+  color: #fff;
+}
+::placeholder {
+  color: #fff;
+  opacity: 0.75;
+  font-family: "Kharkiv Tone";
+}
+:focus {
+    outline: 0;
+    border: 0;
+}
+.buttons {
+  display: inline-flex;
+  margin-left: 36px;
+  margin-right: 36px;
+  justify-content: space-between;
+  margin-bottom: 5%;
+}
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  font-family: "Kharkiv Tone";
+  font-size: 25px;
+  width: max-content;
+  width: 80px;
+  height: max-content;
+  height: 80px;
+  flex: 1 1 80px;
+}
+.white {
+  background: 0;
+  border-top: 3px solid #4C13EE;
+  color: #4C13EE;
+}
+.blue {
+  background: #4C13EE;
+  color: #fff;
+}
+.greeting {
+  width: max-content;
+  flex: 1 1 240px;
+}
+.calculate {
+  width: max-content;
+  flex: 1 1 240px;
+}
+.nine {
+  flex: 0 0 80px;
+}
+.zero {
+  flex: 0 0 80px;
+}
+@media (max-width: 990px) {
+  .greeting {
+    font-size: 15px;
+  }
+  .calculate {
+    font-size: 15px;
+  }
+  .nine {
+    flex: 1 1 80px;
+  }
+  .zero {
+    flex: 1 1 80px;
+  }
+  #expression {
+    font-size: 11px;
+  }
