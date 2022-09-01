@@ -33,21 +33,23 @@ document.addEventListener('keyup', function(event){
        clearAll();
     }
     return element = document.getElementById("expression");
-});
-function greeting() {
-  element = document.getElementById("expression");
-  element.value = 'hi!! type "h" to learn more about me';
-  {
-  document.addEventListener('keyup', function(event) {
-      if (event.keyCode === 72) {
-        element.value = 'wow';
-        focusInput();
-      }
-    });
-  }
-}
+})
 function copyFunction() {
   element = document.getElementById("expression");
   navigator.clipboard.writeText(element.value);
   focusInput();
 }
+
+function greeting() {
+  element = document.getElementById("expression");
+  element.value = 'hi!! type "h" to learn more about me';
+};
+let modal = document.getElementById("modal-window");
+function closeWindow() {
+  modal.classList.remove("active");
+}
+document.addEventListener('keyup', function(event) {
+    if (event.keyCode === 72) {
+      modal.classList.add("active");
+    }
+  });
