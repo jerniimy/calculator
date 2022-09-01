@@ -119,6 +119,7 @@ body {
   flex: 0 0 80px;
 }
 #modal-window {
+  padding: 5px;
   position: absolute;
   display: none;
   top: 0;
@@ -127,11 +128,36 @@ body {
   right: 0;
   margin: auto;
   width: 30%;
-  height: 50%;
-  background: pink;
+  height: 40%;
+  background: #fff;
+  color: #4C13EE;
+  justify-content: flex-end;
+  font-family: "Kharkiv Tone";
 }
 #modal-window.active {
-  display: block;
+  display: flex;
+}
+#close {
+  color: #4C13EE;
+  font-family: "Kharkiv Tone";
+  font-size: 20px;
+  position: absolute;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+.content {
+left: 0;
+right: 0;
+margin: auto;
+text-align: center;
+padding: 20px;
+}
+h2 {
+  margin-bottom: 30px;
+}
+p {
+  margin-bottom: 20px;
 }
 @media (max-width: 990px) {
   .greeting {

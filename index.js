@@ -49,6 +49,11 @@ function closeWindow() {
   modal.classList.remove("active");
 }
 document.addEventListener('keyup', function(event) {
+    if (event.keyCode === 27) {
+      closeWindow()
+    }
+  });
+document.addEventListener('keyup', function(event) {
     if (event.keyCode === 72) {
       modal.classList.add("active");
     }
