@@ -65,7 +65,7 @@ body {
   width: min-content;
   background: #fff;
   align-items: center;
-  border: 3px #4C13EE dotted;
+  border: none;
   padding: 3px;
   margin: 10px;
   margin-left: calc(10px + 5%);
