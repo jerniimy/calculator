@@ -49,4 +49,5 @@ function greeting() {
 function copyFunction() {
   element = document.getElementById("expression");
   navigator.clipboard.writeText(element.value);
+  focusInput();
 }
