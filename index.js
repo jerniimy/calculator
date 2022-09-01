@@ -46,3 +46,9 @@ function greeting() {
     });
   }
 }
+function copyFunction() {
+  element = document.getElementById("expression");
+  element.select();
+  element.setSelectionRange(0, 99999);
+  navigator.clipboard.writeText(element.value);
+}
