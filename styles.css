@@ -46,7 +46,7 @@ body {
   right: 0;
   margin: auto;
   margin-top: 5%;
-  margin-bottom: 5%;
+  margin-bottom: 0;
   text-indent: 10px;
   font-family: "Kharkiv Tone";
   color: #fff;
@@ -59,6 +59,20 @@ body {
 :focus {
     outline: 0;
     border: 0;
+}
+.copy {
+  display: flex;
+  width: min-content;
+  background: #fff;
+  align-items: center;
+  border: 3px #4C13EE dotted;
+  padding: 3px;
+  margin: 10px;
+  margin-left: calc(10px + 5%);
+  font-size: 15px;
+  font-family: "Kharkiv Tone";
+  color: #4C13EE;
+  cursor: pointer;
 }
 .buttons {
   display: inline-flex;
@@ -79,6 +93,7 @@ body {
   height: max-content;
   height: 80px;
   flex: 1 1 80px;
+  cursor: pointer;
 }
 .white {
   background: 0;
