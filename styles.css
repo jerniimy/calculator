@@ -8,6 +8,13 @@ body {
   font-family: "Kharkiv Tone";
   overflow-x: hidden;
 }
+a {
+  text-decoration: underline;
+  text-decoration-style: wavy;
+}
+a:visited {
+  color: pink;
+}
 .titul {
   display: flex;
   width: 100%;
