@@ -7,7 +7,8 @@ expression.oninput = function(){
 let resultOfExp;
 function focusInput() {
   let input = expression;
-  input.focus();
+input.focus();
+input.selectionStart = input.value.length;
 }
 function clearAll() {
   element = document.getElementById("expression");
@@ -25,7 +26,7 @@ function giveResult() {
     element.value = resultOfExp;
     focusInput();
 };
-document.addEventListener('keyup', function(event){
+document.addEventListener('keydown', function(event){
     if (event.keyCode === 13) {
          giveResult();
     }
@@ -50,7 +51,8 @@ function closeWindow() {
 }
 document.addEventListener('keyup', function(event) {
     if (event.keyCode === 27) {
-      closeWindow()
+      closeWindow();
+      focusInput();
     }
   });
 document.addEventListener('keyup', function(event) {
