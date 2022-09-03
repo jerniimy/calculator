@@ -51,6 +51,7 @@ function closeWindow() {
 }
 document.addEventListener('keyup', function(event) {
     if (event.keyCode === 27) {
+      clearAll();
       closeWindow();
       focusInput();
     }
