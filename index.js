@@ -45,9 +45,11 @@ function greeting() {
   element = document.getElementById("expression");
   element.value = 'hi!! type "h" to learn more about me';
 };
-let modal = document.getElementById("modal-window");
+let modal = document.getElementById("wrapper");
 function closeWindow() {
+  clearAll();
   modal.classList.remove("active");
+  focusInput();
 }
 document.addEventListener('keyup', function(event) {
     if (event.keyCode === 27) {
