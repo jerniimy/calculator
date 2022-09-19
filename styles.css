@@ -1,3 +1,7 @@
+@font-face {
+font-family: "Kharkiv Tone";
+src: url("font/Kharkiv Tone.ttf");
+}
 body {
   margin: 0;
   padding: 0;
